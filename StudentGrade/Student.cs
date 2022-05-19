@@ -32,8 +32,8 @@ namespace StudentGrade
 
 		public void UpgradeGrade()
 		{
-			if (CheckValidGroup(_group))
-            {
+			if (CheckValidGroup(_group) & CheckValidGrade(_grade))
+			{
 				if (_grade != 'A')
 				{
 
@@ -49,7 +49,7 @@ namespace StudentGrade
             }
             else
             {
-				Console.WriteLine(_name + " is not in valid Group");
+				Console.WriteLine(_name + " is not in valid Group/Grade");
 
 			}
 
@@ -57,7 +57,7 @@ namespace StudentGrade
 
 		public void  DowngradeGrade()
 		{
-			if (CheckValidGroup(_group))
+			if (CheckValidGroup(_group) & CheckValidGrade(_grade))
             {
 				if (_grade != 'F')
 				{
@@ -73,7 +73,7 @@ namespace StudentGrade
 			}
 			else
 			{
-				Console.WriteLine(_name + " is not in valid Group");
+				Console.WriteLine(_name + " is not in valid Group/Grade");
 
 			}
 

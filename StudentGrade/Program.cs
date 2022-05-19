@@ -12,3 +12,6 @@ student3.UpgradeGrade();
 
 Student student4 = new("Sithik", 'C', 4);
 student4.UpgradeGrade();
+
+Student student5 = new("Sithik", 'H', 4);
+student5.UpgradeGrade();
